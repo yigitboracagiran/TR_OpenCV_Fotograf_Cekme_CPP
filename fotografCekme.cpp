@@ -83,22 +83,14 @@ int main(){
             strncat(resimAdi, ".jpg", 5);  
             cv::imwrite(resimAdi, resim);
             cout << "Fotograf Basariyla Olusturuldu." << endl;
-            if(kisininKlasoru[strlen(resimAdi)]=='\0'){
-                cout << "null";
-            }
         }
         else if ( key == 'q' ){ //q'ya basilirsa kod sonlandiriliyor.
             break;
         }
         cv::imshow("Canli Yayin", resim); 
     }
+
     cv::destroyAllWindows();
-    if(kisininKlasoru[strlen(kisininKlasoru)]=='\0'){
-        cout << "null";
-    }
-    if(kisininKlasoru[strlen(yeniKlasorAdi)]=='\0'){
-        cout << "null";
-    }
     delete yeniKlasorAdi; //Bellekten siliyoruz.
     delete kisininKlasoru;
     return 0;
