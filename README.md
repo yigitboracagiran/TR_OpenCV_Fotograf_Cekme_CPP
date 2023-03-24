@@ -1,4 +1,6 @@
-Kodu Derleme ve Calistirma
+Kodu Derleme ve Çalıştırma
+
+Not: Bilgisayarınızda opencv'nin kurulu olması gerekmektedir.
 
 1- g++ -std=c++17 -o foto fotografCekme.cpp `pkg-config --cflags --libs opencv4`
 
